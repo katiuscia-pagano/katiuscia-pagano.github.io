@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katiuscia Pagano - Researcher CNR</title>
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .lang-toggle {
+      text-align: right;
+      margin-bottom: 1rem;
+    }
+    .lang-toggle button {
+      margin-left: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #003366;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .profile-img {
+      max-width: 180px;
+      float: right;
+      margin-left: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body onload="setLanguage('en')">
+  <header>
+    <h1>Katiuscia Pagano</h1>
+    <p>Researcher | Ricercatrice – CNR SCITEC</p>
+  </header>
+
+  <main>
+    <div class="lang-toggle">
+      <button onclick="setLanguage('it')">Italiano</button>
+      <button onclick="setLanguage('en')">English</button>
+    </div>
+
+    <section id="about">
+      <h2>Chi sono / About</h2>
+      <img src="profile.jpg" alt="Foto Katiuscia Pagano" class="profile-img" />
+      <p lang="it">
+        Katiuscia Pagano è una ricercatrice presso il CNR – Istituto di Scienze e Tecnologie Chimiche "Giulio Natta" (SCITEC).
+        Laureata in Chimica all'Università di Padova e Dottore di Ricerca in Scienze Biomediche e Biotecnologiche, lavora nel campo della spettroscopia NMR e della chimica delle proteine.
+      </p>
+      <p lang="en">
+        Katiuscia Pagano is a researcher at the CNR – Institute of Chemical Sciences and Technologies "Giulio Natta" (SCITEC).
+        She holds a degree in Chemistry from the University of Padua and a PhD in Biomedical and Biotechnological Sciences. Her research focuses on NMR spectroscopy and protein chemistry.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Attività di Ricerca / Research Activities</h2>
+      <ul lang="it">
+        <li>Studio di peptidi e proteine mediante spettroscopia NMR</li>
+        <li>Analisi strutturale di aggregati proteici</li>
+        <li>Sviluppo di materiali nanostrutturati per applicazioni biomediche</li>
+      </ul>
+      <ul lang="en">
+        <li>Study of peptides and proteins through NMR spectroscopy</li>
+        <li>Structural analysis of protein aggregates</li>
+        <li>Development of nanostructured materials for biomedical applications</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Progetti / Projects</h2>
+      <ul lang="it">
+        <li>Progetto FIRB: Struttura e dinamica di proteine associate ad amiloidosi</li>
+        <li>Progetto Horizon 2020: Nanotecnologie per il rilascio di farmaci antitumorali</li>
+        <li>Collaborazione con università europee per lo studio di biomarcatori molecolari</li>
+      </ul>
+      <ul lang="en">
+        <li>FIRB Project: Structure and dynamics of amyloid-related proteins</li>
+        <li>Horizon 2020 Project: Nanotechnologies for anticancer drug delivery</li>
+        <li>Collaboration with European universities on molecular biomarker studies</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Pubblicazioni / Publications</h2>
+      <p>
+        <a href="https://scholar.google.com/citations?user=VpI-Q64AAAAJ" target="_blank">Google Scholar – Katiuscia Pagano</a>
+      </p>
+    </section>
+
+    <section id="contacts">
+      <h2>Contatti / Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:katiuscia.pagano@scitec.cnr.it">katiuscia.pagano@scitec.cnr.it</a></li>
+        <li>ORCID: <a href="https://orcid.org/0000-0002-0462-2056" target="_blank">0000-0002-0462-2056</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/katiuscia-pagano-421699125" target="_blank">Profilo</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 Katiuscia Pagano | Pagina web personale
+  </footer>
+
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('[lang]').forEach(el => {
+        el.style.display = (el.getAttribute('lang') === lang) ? '' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
